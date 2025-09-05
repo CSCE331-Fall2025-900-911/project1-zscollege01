@@ -9,6 +9,9 @@
 
     <body>
         <div class="heading">
+            <div class="logo">
+                <a href="index.html">Zaahir Sharma</a>
+            </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -16,7 +19,7 @@
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="service.html">Service</a></li>
                     <li><a href="genai.html">AI Generated</a></li>
-                    <li id="contact"><a href="contact.html">Contact</a></li>
+                    <li id="contact"><a href="index.html#contact-form">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -25,10 +28,10 @@
             <div class="profile-section">
                 <img id="profile-picture" src="https://i.insider.com/59ca74582488496ef520430f?width=700" alt="Profile Picture">
                 <ul class="logos">
-                    <li><a href="https://github.com/yourusername" target="_blank"><img src="./assets/github.jpg" alt="GitHub"></a></li>
-                    <li><a href="https://linkedin.com/in/yourusername" target="_blank"><img src="./assets/linkedin.jpg" alt="LinkedIn"></a></li>
-                    <li><a href="https://instagram.com/yourusername" target="_blank"><img src="./assets/instagram.jpg" alt="Instagram"></a></li>
-                    <li><a href="https://discord.com/users/yourusername" target="_blank"><img src="./assets/discord.jpg" alt="Discord"></a></li>
+                    <li><a href="https://github.com/zaahirsharma" target="_blank"><img src="./assets/github.jpg" alt="GitHub"></a></li>
+                    <li><a href="https://linkedin.com/in/zaahir-sharma" target="_blank"><img src="./assets/linkedin.jpg" alt="LinkedIn"></a></li>
+                    <li><a href="https://instagram.com/zaahir_918" target="_blank"><img src="./assets/instagram.jpg" alt="Instagram"></a></li>
+                    <li><a href="https://discord.com/users/zaahirsharma" target="_blank"><img src="./assets/discord.jpg" alt="Discord"></a></li>
                 </ul>
             </div>
             
@@ -44,6 +47,55 @@
                     and make it easier to read.
                 </p>
             </div>
+        </div>
+
+        <div class="projects-section">
+            <div class="project-card">
+                <h3>Latest Project</h3>
+                <img src="./assets/latest-project.jpg" alt="Latest Project Screenshot" class="project-image">
+                <p class="project-description">
+                    Description of your newest project goes here. Explain what it does, 
+                    what technologies you used, and what makes it special or interesting.
+                </p>
+            </div>
+            
+            <div class="project-card">
+                <h3>Favorite Project</h3>
+                <img src="./assets/favorite-project.jpg" alt="Favorite Project Screenshot" class="project-image">
+                <p class="project-description">
+                    Description of your favorite project goes here. Talk about why it's 
+                    your favorite, what you learned from it, and what challenges you overcame.
+                </p>
+            </div>
+        </div>
+
+        <div class="contact-form-section" id="contact-form">
+            <h2>Contact Me</h2>
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="purpose">Purpose:</label>
+                    <select id="purpose" name="purpose" required>
+                        <option value="">Select a purpose...</option>
+                        <option value="collaboration">Collaboration</option>
+                        <option value="job-opportunity">Job Opportunity</option>
+                        <option value="freelance">Freelance Work</option>
+                        <option value="question">General Question</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="6" required placeholder="Enter your message here..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
         </div>
 
         
