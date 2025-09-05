@@ -484,6 +484,7 @@
     padding: 20px;
     border-radius: 6px;
     border-left: 4px solid maroon;
+    border-right: 4px solid maroon;
 }
 
 .learning-category h4 {
@@ -507,4 +508,204 @@
 
 .learning-category li:last-child {
     border-bottom: none;
+}
+
+/* Service styling */
+
+.service-container {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.service-header h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service-header p {
+    font-size: 1.2em;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.service-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.organization-logo {
+    width: 100%;
+    height: 200px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+.service-card h2 {
+    font-size: 1.6em;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.organization-description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+.contribution-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid maroon;
+    border-right: 4px solid maroon;
+}
+
+.contribution-section h3 {
+    color: maroon;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.contribution-section p {
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.contribution-section ul {
+    margin: 15px 0 0 0;
+    padding-left: 20px;
+    color: #666;
+}
+
+.contribution-section li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.opportunities-section {
+    margin-top: 60px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.opportunities-section h2 {
+    text-align: center;
+    font-size: 2.2em;
+    color: #333;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.opportunities-intro {
+    text-align: center;
+    font-size: 1.1em;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+}
+
+.opportunities-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.opportunity-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.opportunity-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.opportunity-image {
+    flex-shrink: 0;
+    width: 200px;
+}
+
+.opp-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #e9ecef;
+}
+
+.opportunity-content {
+    flex: 1;
+}
+
+.opportunity-content h3 {
+    color: #333;
+    font-size: 1.4em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.opportunity-content p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.opportunity-skills {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 6px;
+    border-left: 4px solid maroon;
+    border-right: 4px solid maroon;
+    color: #666;
+    line-height: 1.5;
+}
+
+.opportunity-skills strong {
+    color: maroon;
 }
