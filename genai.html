@@ -258,6 +258,113 @@
             line-height: 1.6;
         }
 
+        /* AI Prompt Display Section */
+        .ai-prompt-section {
+            position: relative;
+            z-index: 2;
+            padding: 60px 20px;
+            background: rgba(255, 255, 255, 0.95);
+            margin: 40px 20px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .prompt-intro {
+            color: #666;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .prompt-textarea {
+            width: 100%;
+            height: 400px;
+            padding: 20px;
+            border-radius: 15px;
+            border: 2px solid #667eea;
+            background: rgba(255, 255, 255, 0.95);
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #333;
+            resize: vertical;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            max-width: 900px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .prompt-textarea:focus {
+            outline: none;
+            border-color: #764ba2;
+            box-shadow: 0 10px 30px rgba(118, 75, 162, 0.2);
+        }
+
+        .prompt-note {
+            color: #666;
+            text-align: center;
+            margin-top: 20px;
+            font-style: italic;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Fun Facts Counter */
+        .fun-facts {
+            position: relative;
+            z-index: 2;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .fun-facts-title {
+            color: white;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+
+        .facts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .fact-item {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .fact-item:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .fact-number {
+            font-size: 3em;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .fact-label {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.1em;
+        }
+
         /* Fun Facts Counter */
         .fun-facts {
             position: relative;
@@ -409,11 +516,6 @@
                     <div class="skill-name">Mobile Development</div>
                     <div class="skill-level">Cross-Platform Apps</div>
                 </div>
-                <div class="skill-item">
-                    <span class="skill-icon">☁️</span>
-                    <div class="skill-name">Cloud Computing</div>
-                    <div class="skill-level">AWS & Azure</div>
-                </div>
             </div>
         </div>
 
@@ -464,6 +566,34 @@
             </div>
         </div>
 
+        <!-- AI Prompt Display Section -->
+        <div class="ai-prompt-section">
+            <h2 class="timeline-title">The AI Prompt Behind This Page</h2>
+            <p class="prompt-intro">
+                Here's the exact prompt I used to generate this entire interactive webpage with Claude AI:
+            </p>
+            <textarea readonly class="prompt-textarea">I'm Zaahir Sharma, a computer science student, and I want something that really showcases what AI can do.
+Requirements:
+**Basic info about me:**
+* CS student
+* Skills: Web Development (Full-Stack), AI & Machine Learning (Data Science Focus), Mobile Development (Cross-Platform Apps)
+* Timeline: Started uni in 2022, built first major project in 2023 (full-stack web app with React/Node.js), got into AI/ML in 2024, still growing in 2025
+* Some stats: 20 projects completed, 10 technologies mastered, 1000 hours coding, 23 GitHub repos
+**Features I want:**
+* Hero section 
+* Skills showcase section called "My Skill Constellation" showing my 3 main skills
+* Timeline section "My Journey Through Time" with my progression
+* Fun stats section with those animated counters
+* Call-to-action button "Let's Build Something Amazing Together"
+* Keep the header the same as the rest of the webpages
+**Design direction:** I want a "digital universe" theme with purple/blue gradients, glassmorphism effects, and it needs to be mobile responsive. Use contemporary design trends and make it feel premium and cutting-edge.
+Go absolutely crazy with the animations and interactive effects. I want floating particles, smooth transitions, hover effects, things that scale and rotate, counters that animate up from zero, timeline items that slide in, skill cards that react when you hover them - basically make it as visually impressive and engaging as possible.
+Make it all in one HTML file with embedded CSS and JavaScript.</textarea>
+            <p class="prompt-note">
+                This demonstrates the power of effective AI prompting - clear requirements combined with creative freedom!
+            </p>
+        </div>
+        
         <!-- Fun Facts -->
         <div class="fun-facts">
             <h2 class="fun-facts-title">Fun Facts & Stats</h2>
