@@ -37,6 +37,9 @@ a {
     margin: 0;
     padding: 0;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .heading li {
@@ -45,13 +48,19 @@ a {
     white-space: nowrap; 
 }
 
-.heading a {
-    color: #333;
-    transition: color 0.3s ease;
-}
 
 .heading a:hover {
     color: maroon; 
+}
+
+.heading button {
+    background-color: maroon;
+    font-family: inherit;
+    color: #fff6ec;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .social {
