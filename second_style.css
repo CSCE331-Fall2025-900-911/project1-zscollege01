@@ -622,14 +622,12 @@ a {
 
 /* Portfolio styling */
 
-/* Portfolio Container */
 .portfolio-container {
     margin-left: 280px;
     padding: 40px;
     min-height: 100vh;
 }
 
-/* Portfolio Header */
 .portfolio-header {
     text-align: center;
     background: linear-gradient(135deg, #ffffff 0%, #F7FAFC 100%);
@@ -668,7 +666,6 @@ a {
     margin: 30px auto 0;
 }
 
-/* Projects Grid */
 .projects-grid {
     display: flex;
     flex-direction: column;
@@ -683,7 +680,6 @@ a {
     flex-wrap: wrap;
 }
 
-/* Project Cards */
 .project-card {
     position: relative;
     background: linear-gradient(135deg, #ffffff 0%, #F7FAFC 100%);
@@ -723,7 +719,6 @@ a {
     transition: all 0.4s ease;
 }
 
-/* Hide main content on hover */
 .project-card:hover .project-thumbnail,
 .project-card:hover .project-title,
 .project-card:hover .tech-stack {
@@ -732,7 +727,6 @@ a {
     transform: scale(0.8);
 }
 
-/* Project Thumbnail */
 .project-thumbnail {
     width: 120px;
     height: 120px;
@@ -743,7 +737,6 @@ a {
     transition: all 0.4s ease;
 }
 
-/* Project Title */
 .project-title {
     color: #2C5282;
     font-size: 1.2em;
@@ -753,7 +746,6 @@ a {
     transition: all 0.4s ease;
 }
 
-/* Tech Stack */
 .tech-stack {
     transition: all 0.4s ease;
 }
@@ -785,7 +777,6 @@ a {
     transition: all 0.3s ease;
 }
 
-/* Project Description - Appears inside circle on hover */
 .project-description {
     position: absolute;
     top: 50%;
@@ -813,7 +804,6 @@ a {
     transform: translate(-50%, -50%) scale(1);
 }
 
-/* Future Projects Section */
 .future-projects-section {
     margin-left: 280px;
     padding: 40px;
@@ -846,9 +836,10 @@ a {
 }
 
 .future-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
     margin-top: 50px;
 }
 
@@ -858,6 +849,7 @@ a {
     padding: 30px;
     border-radius: 16px;
     border: 2px solid rgba(44, 82, 130, 0.1);
+    width: 90%;
 }
 
 .upcoming-projects h3,
@@ -913,8 +905,8 @@ a {
 }
 
 .learning-categories {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
