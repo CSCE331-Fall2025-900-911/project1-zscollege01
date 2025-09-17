@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Experience - Zaahir Sharma</title>
-    <link rel="stylesheet" href="main_style.css">
+    <link id="stylesheet" rel="stylesheet" href="main_style.css">
     <style>
         * {
             margin: 0;
@@ -483,7 +483,7 @@
                 <li><a href="service.html">Service</a></li>
                 <li><a href="genai.html">AI Generated</a></li>
                 <li><a href="index.html#contact-form">Contact</a></li>
-                <li><button type="button">Change Style</button></li>
+                <li><button onclick="toggleStyleSheet()" type="button">Change Style</button></li>            
             </ul>
         </nav>
     </div>
@@ -685,5 +685,6 @@ Make it all in one HTML file with embedded CSS and JavaScript.</textarea>
             });
         });
     </script>
+    <script src="change_website.js"></script>
 </body>
 </html>
