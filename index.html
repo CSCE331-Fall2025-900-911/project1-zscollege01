@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home Page</title>
-        <link rel="stylesheet" href="main_style.css">
+        <link id="stylesheet" rel="stylesheet" href="main_style.css">
     </head>
 
     <body>
@@ -18,7 +18,7 @@
                     <li><a href="service.html">Service</a></li>
                     <li><a href="genai.html">AI Generated</a></li>
                     <li><a href="index.html#contact-form">Contact</a></li>
-                    <li><button type="button">Change Style</button></li>
+                    <li><button onclick="toggleStyleSheet()" type="button">Change Style</button></li>
                 </ul>
             </nav>
         </div>
@@ -123,5 +123,7 @@
                 <button type="submit" class="submit-btn">Send Message</button>
             </form>
         </div>
+        
+        <script src="change_website.js"></script>
     </body>
 </html>
